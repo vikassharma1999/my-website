@@ -12,7 +12,7 @@ body{
 }
 
 .navbar-logo a{
-	color: #55198b;
+	color: #7b198b;
 	text-decoration: none;
 }
 .navbar-right{
@@ -26,7 +26,7 @@ body{
 }
 
 .navbar-item a{
-	color: #55198b;
+	color: #7b198b;
 	text-decoration: none;
 }
 
@@ -113,7 +113,7 @@ body{
 	background: #0e76a8;
 }
 
-.mail i{
+.google i{
 	background: #ea4335;
 }
 
@@ -130,7 +130,7 @@ body{
 
 .github i:hover,
 .linkedin i:hover,
-.mail i:hover{
+.google i:hover{
 	background: #000;
 }
 
@@ -140,7 +140,7 @@ body{
 
 .contact-resume-div button{
 	padding: 0.8rem 1rem;
-	background: #55198b;
+	background: #7b198b;
 	color: #fff;
 	font-weight: bold;
 	border-radius: .4rem;
@@ -155,16 +155,70 @@ body{
 
 .contact-resume-div button:hover{
 	background: #fff;
-	color: #55198b;
-	border: 0.1rem solid #55198b;
+	color: #7b198b;
+	border: 0.1rem solid #7b198b;
+}
+
+.greeting-right{
+	margin-right: 6rem;
 }
 
 .user-profile{
-	border: 0.4rem solid #55198b;
+	border: 0.4rem solid #7b198b;
 	border-radius: 50%;
 	width: 15rem;
 	height: 15rem;
-	margin: 0 2rem;
+	margin: 0 5rem;
+}
+
+.skills-heading {
+	font-size: 3rem;
+	text-align: center;
+}
+
+.skills-wrapper {
+	display: flex;
+	align-items: center;
+	padding: 0 1.6rem;
+}
+
+.skills-desc-listing {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.skills-desc-item {
+	color: #868e96;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+
+.skills-tech-listing {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.skills-tech-item {
+	display: inline-block;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+}
+
+.skills-tech-item>i{
+	color: #868e96;
+}
+.skills-tech-item>p{
+	font-size: 1rem;
+	color: #868e96;
+}
+
+.skills-tech-item>i:hover,
+.skills-tech-item>i:hover~p{
+	color: #7b198b;
 }
 
 .js-scroll {
