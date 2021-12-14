@@ -221,6 +221,32 @@ body{
 	color: #7b198b;
 }
 
+.projects-main-wrapper {
+	padding: 1.6rem;
+}
+
+.projects-heading {
+	font-size: 3rem;
+}
+
+.projects-wrapper{
+	display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 2rem 2rem;
+    gap: 2rem 2rem;
+}
+
+.project-card {
+	border: 0.1rem solid black;
+    padding: 1rem 2rem;
+    box-shadow: 0.6rem 0.6rem #7b198b;
+}
+
+.card-heading-wrapper {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .js-scroll {
   opacity: 0;
   transition: opacity 500ms;
