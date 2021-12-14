@@ -4,44 +4,143 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Website</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<script src="https://kit.fontawesome.com/cfc947cec7.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <nav>
 	<div class="navbar-wrapper">
-		<ul class="navbar-left">
+		<div class="navbar-logo">
+			<a href="">myLogo</a>
+		</div>
+		<ul class="navbar-right">
 			<li class="navbar-item">
-				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
 			</li>
 			<li class="navbar-item">
-				<a href="#resume">Resume</a>
+				<a href="#workexp">Work Experiences</a>
 			</li>
 			<li class="navbar-item">
 				<a href="#projects">Projects</a>
 			</li>
 			<li class="navbar-item">
+				<a href="#education">Education</a>
+			</li>
+			<li class="navbar-item">
 				<a href="#contact">Contact Me</a>
 			</li>
 		</ul>
-		<div class="navbar-right">
-			<a href="https://drive.google.com/file/d/1mAT-mPB1VO8uX2kYUF6y5FsL45n_yXq8/view?usp=sharing" target="_blank">Download Resume</a>
-		</div>
 	</div>
 </nav>
-<section id="about">
-	About
-</section>
-<section id="resume">
-	resume
-</section>
-<section id="projects">
-	Projects
-</section>
-<section id="contact">
-	Contact Me
-</section>
-<section>
-	footer
-</section>
+<div class="greeting-container">
+	<div class="greeting-left js-load slide-up">
+		<h1>
+			Hi all, I'm Vikas
+			<span class="wave-emoji">
+				<img src="./assets/wave.png">
+			</span>
+		</h1>
+		<p class="sub-heading">A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.</p>
+
+		<div class="social-web">
+			<a href="https://github.com/vikassharma1999" target="_blank" class="icon-button github"><i class="fa fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/vikas07/" target="_blank" class="icon-button linkedin"><i class="fa fa-linkedin"></i></a>
+			<a href="mailto:vikasjpr314@gmail.com" class="icon-button google"><i class="fa fa-google"></i></a>
+			<!-- <a href=""><i class="fa fa-leetcode"></i></a> -->
+		</div>
+		<div class="contact-resume-div">
+			<button class="contact-btn">CONTACT ME</button>
+			<button class="resume-btn">VIEW RESUME</button>
+		</div>
+
+	</div>
+	<div class="greeting-right">
+			<img src="./assets/vs1.jpg" class="user-profile">
+	</div>
+</div>
+
+<div class="skills-main-wrapper" id="skills">
+	<h1 class="skills-heading">What I Do</h1>
+	<div class="skills-wrapper">
+		<div class="skills-desc js-scroll slide-left">
+			<ul class="skills-desc-listing">
+				<li class="skills-desc-item">⚡ Building responsive website front end using React-Redux.</li>
+				<li class="skills-desc-item">⚡ Creating application backend in Node & Express.</li>
+			</ul>
+		</div>
+		<div class="skills-tech js-scroll slide-right">
+			<ul class="skills-tech-listing">
+				<li class="skills-tech-item"><i class="fab fa-html5"></i><p>html-5</p></li>
+				<li class="skills-tech-item"><i class="fab fa-sass"></i><p>sass</p></li>
+				<li class="skills-tech-item"><i class="fab fa-css3"></i><p>css3</p></li>
+				<li class="skills-tech-item"><i class="fab fa-js"></i><p>javasccript</p></li>
+				<li class="skills-tech-item"><i class="fab fa-react"></i><p>reactjs</p></li>
+				<li class="skills-tech-item"><i class="fab fa-node"></i><p>nodejs</p></li>
+				<li class="skills-tech-item"><i class="fas fa-database"></i><p>sql-database</p></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="projects-main-wrapper" id="projects">
+	<h1 class="projects-heading">Projects</h1>
+	<div class="projects-wrapper">
+		<div class="project-card">
+			<div class="card-heading-wrapper">
+				<h1 class="card-heading">Apni Dukan</h1>
+				<div>
+					<a href="https://github.com/vikassharma1999" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="#"><i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+			<p class="card-desc">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<span>
+				JavaScript,Html,css
+			</span>
+		</div>
+		<div class="project-card">
+			<div class="card-heading-wrapper">
+				<h1 class="card-heading">Apni Dukan</h1>
+				<div>
+					<a href="https://github.com/vikassharma1999" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="#"><i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+			<p class="card-desc">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<span>
+				JavaScript,Html,css
+			</span>
+		</div>
+		<div class="project-card">
+			<div class="card-heading-wrapper">
+				<h1 class="card-heading">Apni Dukan</h1>
+				<div>
+					<a href="https://github.com/vikassharma1999" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="#"><i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+			<p class="card-desc">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<span>
+				JavaScript,Html,css
+			</span>
+		</div>
+		<div class="project-card">
+			<div class="card-heading-wrapper">
+				<h1 class="card-heading">Apni Dukan</h1>
+				<div>
+					<a href="https://github.com/vikassharma1999" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="#"><i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+			<p class="card-desc">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<span>
+				JavaScript,Html,css
+			</span>
+		</div>
+
+	</div>
+</div>
+	<script type="text/javascript" src="./scripts/scroll.js"></script>
 </body>
 </html>
