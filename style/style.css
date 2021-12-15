@@ -237,9 +237,22 @@ body{
 }
 
 .project-card {
-	border: 0.1rem solid black;
     padding: 1rem 2rem;
-    box-shadow: 0.6rem 0.6rem #7b198b;
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 0.2);
+}
+
+.project-card a{
+	color: black;
+}
+
+.project-card:hover{
+	background-color:#7b198b;
+	color: white;
+	box-shadow: 0px 12px 40px #7b198b;
+}
+
+.project-card:hover a{
+	color: white;
 }
 
 .card-heading-wrapper {
@@ -301,5 +314,9 @@ body{
 
 .loaded.slide-up {
 	animation: slide-up 1s ease-in-out both; 
+}
+
+.scrolled.slide-up {
+	animation: slide-up 1s ease-in-out both;
 }
 
