@@ -14,6 +14,7 @@ body{
 .navbar-logo a{
 	color: #7b198b;
 	text-decoration: none;
+	font-weight: bold;
 }
 .navbar-right{
 	list-style: none;
@@ -22,17 +23,23 @@ body{
 }
 
 .navbar-item{
-	padding-left: 1.6rem;
+	/*padding-left: 1.6rem;*/
+	/*margin-left: 1.6rem;*/
 }
 
 .navbar-item a{
 	color: #7b198b;
 	text-decoration: none;
+	font-weight: bold;
+	padding: 0.5rem 1.6rem;
+	/*border: 1px solid transparent;*/
 }
 
 .navbar-item a:hover,
 .navbar-item a:active{
-	/*color: #fff;*/
+	color: #fff;
+	background: #7b198b;
+	border-radius: 0.4rem;
 }
 
 .about{
@@ -138,7 +145,7 @@ body{
 	display: flex;
 }
 
-.contact-resume-div button{
+.contact-resume-div a{
 	padding: 0.8rem 1rem;
 	background: #7b198b;
 	color: #fff;
@@ -147,16 +154,18 @@ body{
 	border: none;
 	cursor: pointer;
 	font-size: 1rem;
+	border: 0.1rem solid transparent;
+	text-decoration: none;
 }
 
 .contact-btn{
 	margin-right: 3.6rem;
 }
 
-.contact-resume-div button:hover{
+.contact-resume-div a:hover{
 	background: #fff;
 	color: #7b198b;
-	border: 0.1rem solid #7b198b;
+	border-color: #7b198b;
 }
 
 .greeting-right{
@@ -221,6 +230,102 @@ body{
 	color: #7b198b;
 }
 
+.workexp{
+	padding: 1.6rem;
+}
+
+.workexp-list{
+	list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  /*padding-top: 50px;*/
+  background: #868e96;
+}
+
+.workexp-list::after{
+	content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.workexp-list:nth-child(1):after{
+	bottom: 82px;
+}
+
+.workexp-list:last-child::after{
+	bottom: 0;
+}
+
+.workexp-list-container {
+  position: relative;
+  bottom:0;
+  width: 400px;
+  padding: 15px;
+  background:#7b198b;
+  color: white;
+  border-radius: 0.6rem;
+}
+
+.workexp-list-container::before {
+  content: '';
+  position: absolute;
+  bottom: 46px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.workexp-list:first-child > div::before {
+	bottom: 86px;
+}
+
+.workexp-list:last-child > div::before {
+	bottom: 7px;
+}
+
+.workexp-list:nth-child(odd) > div {
+  left: 45px;
+}
+
+.workexp-list:nth-child(odd) > div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #7b198b transparent transparent;
+}
+
+.workexp-list:nth-child(even) > div {
+  left: -466px;
+}
+
+.workexp-list:nth-child(even) > div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #7b198b;
+}
+
+.workexp-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.company-name {
+	font-size: 1.4rem;
+	margin: 0;
+}
+
+.workexp-details {
+	margin: 0;
+	padding-left: 1rem;
+}
+
 .projects-main-wrapper {
 	padding: 1.6rem;
 }
@@ -239,6 +344,7 @@ body{
 .project-card {
     padding: 1rem 2rem;
     box-shadow: 0px 3px 20px rgb(0 0 0 / 0.2);
+    transition: transform .2s;
 }
 
 .project-card a{
@@ -249,6 +355,7 @@ body{
 	background-color:#7b198b;
 	color: white;
 	box-shadow: 0px 12px 40px #7b198b;
+	transform: scale(1.05);
 }
 
 .project-card:hover a{
@@ -257,12 +364,18 @@ body{
 
 .card-heading-wrapper {
 	display: flex;
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .js-scroll {
   opacity: 0;
   transition: opacity 500ms;
+}
+
+.footer{
+	background: #7b198b;
+	color: #fff;
+	font-weight: bold;
 }
 
 @keyframes slide-in-left {
@@ -318,5 +431,128 @@ body{
 
 .scrolled.slide-up {
 	animation: slide-up 1s ease-in-out both;
+}
+
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #7b198b; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #7b198b;
+  padding: 10px 15px;
+  border: none;
+  display: none;
+}
+
+/*.openbtn:hover {
+  background-color: #444;
+}*/
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #7b198b; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 3rem;
+  height: 3rem;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+@media only screen and (max-width: 576px){
+	
+	.openbtn {
+		display: inline-block;
+	}
+
+	.navbar-wrapper{
+		display: none;
+	}
+
+	.greeting-container{
+		  flex-direction: column-reverse;
+	}
+
+	.greeting-left{
+		margin-right: 0;
+	}
+
+	.contact-resume-div a{
+		font-size: 0.8rem;
+	}
+
+	.greeting-right,
+	.user-profile{
+		margin: 0;
+	}
+
+	.skills-wrapper{
+		display: block;
+	}
+
+	.skills-desc-listing{
+		margin-bottom: 1.6rem;
+	}
+
+	.workexp{
+		display: none;
+	}
+
+	.projects-wrapper{
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr))
+	}
+
 }
 
