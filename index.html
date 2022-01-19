@@ -10,6 +10,16 @@
 
 </head>
 <body>
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#skills" onclick="closeNav()">Skills</a>
+  <a href="#workexp" onclick="closeNav()">Work Experiences</a>
+  <a href="#projects" onclick="closeNav()">Projects</a>
+  <a href="#education" onclick="closeNav()">Education</a>
+  <a href="#contact" onclick="closeNav()">Contact Me</a>
+</div>
+
+<button class="openbtn" onclick="openNav()">&#9776;</button>
 <nav>
 	<div class="navbar-wrapper">
 		<div class="navbar-logo">
@@ -51,8 +61,8 @@
 			<!-- <a href=""><i class="fa fa-leetcode"></i></a> -->
 		</div>
 		<div class="contact-resume-div">
-			<button class="contact-btn">CONTACT ME</button>
-			<button class="resume-btn">VIEW RESUME</button>
+			<a class="contact-btn" href="#contact">CONTACT ME</a>
+				<a href="https://drive.google.com/file/d/1DHjXAqhS8TZbZR-WooHsVi4zA6FcrpXG/view?usp=sharing" target="_blank" class="resume-btn">VIEW RESUME</a>
 		</div>
 
 	</div>
@@ -83,12 +93,66 @@
 		</div>
 	</div>
 </div>
+<div id="workexp" class="workexp">
+	<h1>Work Experience</h1>
+	 <ul>
+    <li class="workexp-list">
+      <div class="workexp-list-container js-scroll slide-right">
+        <div class="workexp-heading">
+        	<p class="company-name">Paytm Payments Bank</p>
+        	<span>July 2021 - Present</span>
+        </div>
+        <ul class="workexp-details">
+        	<li>Working as a software engineer with net banking team.</li>
+        	<li>Tech Stack: JavaScript, HTML, CSS, SASS, Reactjs, Redux, Nodejs.</li>
+        </ul>
+      </div>
+    </li>
+    <li class="workexp-list">
+      <div class="workexp-list-container js-scroll slide-left">
+        <div class="workexp-heading">
+        	<p class="company-name">Paytm Payments Bank</p>
+        	<span>July 2021 - Present</span>
+        </div>
+        <ul class="workexp-details">
+        	<li>Working as a software engineer with net banking team.</li>
+        	<li>Tech Stack: JavaScript, HTML, CSS, SASS, Reactjs, Redux, Nodejs.</li>
+        </ul>
+      </div>
+    </li>
+    <li class="workexp-list">
+      <div class="workexp-list-container js-scroll slide-right">
+        <div class="workexp-heading">
+        	<p class="company-name">Paytm Payments Bank</p>
+        	<span>July 2021 - Present</span>
+        </div>
+        <ul class="workexp-details">
+        	<li>Working as a software engineer with net banking team.</li>
+        	<li>Tech Stack: JavaScript, HTML, CSS, SASS, Reactjs, Redux, Nodejs.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
 <div class="projects-main-wrapper" id="projects">
 	<h1 class="projects-heading">Projects</h1>
-	<div class="projects-wrapper">
+	<div class="projects-wrapper js-scroll slide-up">
 		<div class="project-card">
 			<div class="card-heading-wrapper">
-				<h1 class="card-heading">Apni Dukan</h1>
+				<h1 class="card-heading">Project Name</h1>
+				<div>
+					<a href="https://github.com/vikassharma1999" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+			<p class="card-desc">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<span>
+				JavaScript,Html,css
+			</span>
+		</div>
+		<div class="project-card">
+			<div class="card-heading-wrapper">
+				<h1 class="card-heading">Project Name</h1>
 				<div>
 					<a href="https://github.com/vikassharma1999" target="_blank"><i class="fa fa-github"></i></a>
 					<a href="#"><i class="fas fa-external-link-alt"></i></a>
@@ -101,7 +165,7 @@
 		</div>
 		<div class="project-card">
 			<div class="card-heading-wrapper">
-				<h1 class="card-heading">Apni Dukan</h1>
+				<h1 class="card-heading">Project Name</h1>
 				<div>
 					<a href="https://github.com/vikassharma1999" target="_blank"><i class="fa fa-github"></i></a>
 					<a href="#"><i class="fas fa-external-link-alt"></i></a>
@@ -114,20 +178,7 @@
 		</div>
 		<div class="project-card">
 			<div class="card-heading-wrapper">
-				<h1 class="card-heading">Apni Dukan</h1>
-				<div>
-					<a href="https://github.com/vikassharma1999" target="_blank"><i class="fa fa-github"></i></a>
-					<a href="#"><i class="fas fa-external-link-alt"></i></a>
-				</div>
-			</div>
-			<p class="card-desc">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<span>
-				JavaScript,Html,css
-			</span>
-		</div>
-		<div class="project-card">
-			<div class="card-heading-wrapper">
-				<h1 class="card-heading">Apni Dukan</h1>
+				<h1 class="card-heading">Project Name</h1>
 				<div>
 					<a href="https://github.com/vikassharma1999" target="_blank"><i class="fa fa-github"></i></a>
 					<a href="#"><i class="fas fa-external-link-alt"></i></a>
@@ -141,6 +192,15 @@
 
 	</div>
 </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<footer class="footer">
+	<ul>
+		<li>list1</li>
+		<li>list2</li>
+		<li>list3</li>
+		<li>list4</li>
+	</ul>
+</footer>
 	<script type="text/javascript" src="./scripts/scroll.js"></script>
 </body>
 </html>
