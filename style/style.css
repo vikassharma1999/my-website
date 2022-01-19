@@ -442,7 +442,7 @@ body{
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #7b198b; /* Black*/
+  background-color: white; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
@@ -453,7 +453,7 @@ body{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #7b198b;
   display: block;
   transition: 0.3s;
 }
@@ -483,9 +483,9 @@ body{
   display: none;
 }
 
-/*.openbtn:hover {
-  background-color: #444;
-}*/
+.openbtn:focus {
+  outline: none;
+}
 
 
 #myBtn {
@@ -546,8 +546,55 @@ body{
 		margin-bottom: 1.6rem;
 	}
 
-	.workexp{
-		display: none;
+	.workexp > ul{
+		padding-left: 0.6rem;
+	}
+
+	.workexp-list{
+		padding-bottom: 2rem;
+		margin: 0;
+		width: 0;
+	}
+
+	.workexp-list::after{
+		width: 0;
+		height: 0;
+	}
+
+  .workexp-list-container{
+  	width: 284px;
+  	box-shadow: 0px 12px 40px #7b198b;
+  }
+
+	.workexp-list > div::before,
+	.workexp-list:last-child > div::before {
+    bottom: 86px;
+	}
+
+	.workexp-list:last-child{
+		padding-bottom: 0;
+	}
+
+	.workexp-list:nth-child(even) > div{
+		left: 0;
+	}
+
+	.workexp-list:nth-child(odd) > div{
+		left: 0;
+	}
+
+	.workexp-list:nth-child(even) > div::before{
+		left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #7b198b transparent transparent;
+	}
+
+	.company-name{
+		font-size: 1.2rem;
+	}
+
+	.workexp-heading > span{
+		font-size: 0.8rem;
 	}
 
 	.projects-wrapper{
