@@ -364,6 +364,21 @@ body{
 .education-main-wrapper {
 	padding: 1.6rem;
 }
+.education-wrapper{
+	/* display: grid; */
+	
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 2rem 2rem;
+    gap: 2rem 2rem;
+}
+.education-card {
+	height: 20rem;
+	margin: 2rem 16rem 2rem 16rem;
+    padding: 1rem 2rem;
+	border-radius: 1rem;
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 0.2);
+    transition: transform .2s;
+}
 .card-heading-wrapper {
 	display: flex;
   align-items: center;
