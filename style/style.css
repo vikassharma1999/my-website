@@ -361,7 +361,9 @@ body{
 .project-card:hover a{
 	color: white;
 }
-
+.education-main-wrapper {
+	padding: 1.6rem;
+}
 .card-heading-wrapper {
 	display: flex;
   align-items: center;
