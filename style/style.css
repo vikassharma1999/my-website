@@ -394,8 +394,10 @@ body {
   font-weight: bold;
 }
 .contact-main-wrapper {
+	height: 40rem;
   padding: 1.6rem;
-  background-color: rgb(247, 244, 244);
+  background-color: #f7f7f7;
+  /* background-color: rgb(247, 244, 244); */
   border: 0.1rem solid transparent;
 }
 .contact-heading {
@@ -418,6 +420,7 @@ body {
 }
 .contact-wrapper {
   display: flex;
+  justify-content: center;
 }
 .contact-card {
   background-color: white;
@@ -428,7 +431,8 @@ body {
 }
 .contact-card:hover {
   margin-top: -15px;
-  border-bottom: solid green;
+  box-shadow: 0px 3px 0px 0px #3dc9b3;
+  /* border-bottom: solid green; */
   transition: all 400ms ease-in-out;
   /* transform: scale(1.05); */
 }
