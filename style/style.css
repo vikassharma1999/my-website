@@ -10,7 +10,21 @@ background-color: rgb(235, 226, 235);
   justify-content: space-between;
   align-items: center;
   padding-left: 1.6rem; ;
+  /* border: 1px solid transparent; */
   /* padding: 2rem 1.6rem 0 1.6rem; */
+}
+.navbar-wrapper, .navbar-fixed-top {
+
+background-color: rgb(235, 226, 235);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+	/* opacity: 0.5; */
+}
+.navbar-wrapper.navbar-shrink {
+    transition: background-color .3s ease;
+    background-color: #f3f5f8;
 }
 
 .navbar-logo a {
