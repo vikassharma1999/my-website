@@ -72,7 +72,9 @@ text-transform: uppercase;
   display: flex;
   align-items: center;
 }
-
+.js-load{
+  margin-top: 10rem;
+}
 .greeting-left {
   margin-right: 4rem;
 }
@@ -198,7 +200,9 @@ text-transform: uppercase;
   height: 15rem;
   margin: 0 5rem;
 }
-
+.skills-main-wrapper{
+  margin-top: 10rem;
+}
 .skills-heading {
   font-size: 3rem;
   text-align: center;
@@ -469,14 +473,14 @@ text-transform: uppercase;
   font-weight: bold;
 }
 .contact-main-wrapper {
-	height: 40rem;
+	height: 38rem;
   padding: 1.6rem;
   background-color: #f3f5f8;
   /* background-color: rgb(247, 244, 244); */
   border: 0.1rem solid transparent;
 }
 .contact-heading {
-  margin-top: 10;
+  margin-top: 60px;
   margin-bottom: 35px;
   font-size: 30px;
   text-transform: none;
