@@ -10,12 +10,27 @@ background-color: rgb(235, 226, 235);
   justify-content: space-between;
   align-items: center;
   padding-left: 1.6rem; ;
+  /* border: 1px solid transparent; */
   /* padding: 2rem 1.6rem 0 1.6rem; */
+}
+.navbar-wrapper, .navbar-fixed-top {
+
+background-color: rgb(235, 226, 235);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+	/* opacity: 0.5; */
+}
+.navbar-wrapper.navbar-shrink {
+    transition: background-color .3s ease;
+    background-color: #f3f5f8;
 }
 
 .navbar-logo a {
 text-transform: uppercase;
-  color: rgba(39, 35, 35, 0.5);
+  /* color: rgba(39, 35, 35, 0.5); */
+  color: #636661;
   text-decoration: none;
   font-weight: bold;
   font-size: large;
@@ -35,7 +50,7 @@ text-transform: uppercase;
 }
 
 /* .navbar-item a {
-  color: #7b198b;
+  color: #8b9982;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1.6rem;
@@ -44,7 +59,7 @@ text-transform: uppercase;
 .navbar-item a:hover,
 .navbar-item a:active {
   color: #fff;
-  background: #7b198b;
+  background: #8b9982;
   border-radius: 0.4rem;
 } */
 
@@ -58,7 +73,9 @@ text-transform: uppercase;
   display: flex;
   align-items: center;
 }
-
+.js-load{
+  margin-top: 10rem;
+}
 .greeting-left {
   margin-right: 4rem;
 }
@@ -152,7 +169,7 @@ text-transform: uppercase;
 
 .contact-resume-div a {
   padding: 0.8rem 1rem;
-  background: #7b198b;
+  background: #8b9982;
   color: #fff;
   font-weight: bold;
   border-radius: 0.4rem;
@@ -169,8 +186,8 @@ text-transform: uppercase;
 
 .contact-resume-div a:hover {
   background: #fff;
-  color: #7b198b;
-  border-color: #7b198b;
+  color: #8b9982;
+  border-color: #8b9982;
 }
 
 .greeting-right {
@@ -178,13 +195,15 @@ text-transform: uppercase;
 }
 
 .user-profile {
-  border: 0.4rem solid #7b198b;
+  border: 0.4rem solid #8b9982;
   border-radius: 50%;
   width: 15rem;
   height: 15rem;
   margin: 0 5rem;
 }
-
+.skills-main-wrapper{
+  margin-top: 10rem;
+}
 .skills-heading {
   font-size: 3rem;
   text-align: center;
@@ -232,7 +251,7 @@ text-transform: uppercase;
 
 .skills-tech-item > i:hover,
 .skills-tech-item > i:hover ~ p {
-  color: #7b198b;
+  color: #8b9982;
 }
 
 .workexp {
@@ -273,7 +292,7 @@ text-transform: uppercase;
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #7b198b;
+  background: #8b9982;
   color: white;
   border-radius: 0.6rem;
 }
@@ -302,7 +321,7 @@ text-transform: uppercase;
 .workexp-list:nth-child(odd) > div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #7b198b transparent transparent;
+  border-color: transparent #8b9982 transparent transparent;
 }
 
 .workexp-list:nth-child(even) > div {
@@ -312,7 +331,7 @@ text-transform: uppercase;
 .workexp-list:nth-child(even) > div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #7b198b;
+  border-color: transparent transparent transparent #8b9982;
 }
 
 .workexp-heading {
@@ -357,9 +376,9 @@ text-transform: uppercase;
 }
 
 .project-card:hover {
-  background-color: #7b198b;
+  background-color: #8b9982;
   color: white;
-  box-shadow: 0px 12px 40px #7b198b;
+  box-shadow: 0px 12px 40px #8b9982;
   transform: scale(1.05);
 }
 
@@ -450,19 +469,19 @@ text-transform: uppercase;
 }
 
 .footer {
-  background: #7b198b;
+  background: #8b9982;
   color: #fff;
   font-weight: bold;
 }
 .contact-main-wrapper {
-	height: 40rem;
+	height: 38rem;
   padding: 1.6rem;
   background-color: #f3f5f8;
   /* background-color: rgb(247, 244, 244); */
   border: 0.1rem solid transparent;
 }
 .contact-heading {
-  margin-top: 10;
+  margin-top: 60px;
   margin-bottom: 35px;
   font-size: 30px;
   text-transform: none;
@@ -593,7 +612,7 @@ text-transform: uppercase;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #7b198b;
+  color: #8b9982;
   display: block;
   transition: 0.3s;
 }
@@ -617,7 +636,7 @@ text-transform: uppercase;
   font-size: 20px;
   cursor: pointer;
   background-color: #fff;
-  color: #7b198b;
+  color: #8b9982;
   padding: 10px 15px;
   border: none;
   display: none;
@@ -635,7 +654,7 @@ text-transform: uppercase;
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #7b198b; /* Set a background color */
+  background-color: #8b9982; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -700,7 +719,7 @@ text-transform: uppercase;
 
   .workexp-list-container {
     width: 284px;
-    box-shadow: 0px 12px 40px #7b198b;
+    box-shadow: 0px 12px 40px #8b9982;
   }
 
   .workexp-list > div::before,
@@ -723,7 +742,7 @@ text-transform: uppercase;
   .workexp-list:nth-child(even) > div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #7b198b transparent transparent;
+    border-color: transparent #8b9982 transparent transparent;
   }
 
   .company-name {

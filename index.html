@@ -21,11 +21,14 @@
 
 <button class="openbtn" onclick="openNav()">&#9776;</button>
 <nav>
-	<div class="navbar-wrapper">
+	<div class="navbar-wrapper .navbar-fixed-top navbar-shrink">
 		<div class="navbar-logo">
 			<a href="">Shashank Gupta</a>
 		</div>
 		<ul class="navbar-right">
+			<li class="btn">
+				<a href="#home">Home</a>
+			</li>
 			<li class="btn">
 				<a href="#skills">Skills</a>
 			</li>
@@ -44,7 +47,7 @@
 		</ul>
 	</div>
 </nav>
-<div class="greeting-container">
+<div  class="greeting-container" id="home">
 	<div class="greeting-left js-load slide-up">
 		<h1>
 			Hi all, I'm Vikas
@@ -66,7 +69,7 @@
 		</div> -->
 
 	</div>
-	<div class="greeting-right">
+	<div class="greeting-right js-load">
 			<img src="./assets/vs1.jpg" class="user-profile">
 	</div>
 </div>
@@ -259,14 +262,14 @@
 
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-<footer class="footer">
+<!-- <footer class="footer">
 	<ul>
 		<li>list1</li>
 		<li>list2</li>
 		<li>list3</li>
 		<li>list4</li>
 	</ul>
-</footer>
+</footer> -->
 	<script type="text/javascript" src="./scripts/scroll.js"></script>
 </body>
 </html>
