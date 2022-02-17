@@ -103,21 +103,71 @@ function closeNav() {
 
 //
 //Get the button:
-mybutton = document.getElementById("myBtn");
+// mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// function topFunction() {
+//   document.body.scrollTop = 0; // For Safari
+//   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// }
+
+function switchToDark(){
+  const element = document.body;
+  const navBarEle = document.querySelector(".navbar-wrapper")
+  const elementContact = document.querySelector('.contact-main-wrapper')
+  const hamburgerBtn = document.querySelector(".openbtn")
+  const workExpCard = document.querySelectorAll(".workexp-item")
+  const projectCard = document.querySelectorAll(".project-card")
+  const contactCard = document.querySelectorAll(".contact-card")
+  const sidePanelEle = document.querySelector(".sidepanel")
+  navBarEle.classList.add("dark-mode")
+  sidePanelEle.classList.add("dark-mode")
+  element.classList.add("dark-mode")
+  elementContact.classList.add("dark-mode")
+  hamburgerBtn.style.background = "black"
+  workExpCard.forEach((element)=>{
+    element.classList.add("dark-mode-card")
+  })
+  projectCard.forEach((element)=>{
+    element.classList.add("dark-mode-card")
+  })
+  contactCard.forEach((element)=>{
+    element.classList.add("dark-mode-card")
+  })
+}
+
+function removeDark(){
+  const element = document.body;
+   const navBarEle = document.querySelector(".navbar-wrapper")
+  const elementContact = document.querySelector('.contact-main-wrapper')
+  const hamburgerBtn = document.querySelector(".openbtn")
+  const workExpCard = document.querySelectorAll(".workexp-item")
+  const projectCard = document.querySelectorAll(".project-card")
+  const contactCard = document.querySelectorAll(".contact-card")
+  const sidePanelEle = document.querySelector(".sidepanel")
+   navBarEle.classList.remove("dark-mode")
+  sidePanelEle.classList.remove("dark-mode")
+  element.classList.remove("dark-mode")
+  elementContact.classList.remove("dark-mode")
+  hamburgerBtn.style.background = "white"
+  workExpCard.forEach((element)=>{
+    element.classList.remove("dark-mode-card")
+  })
+  projectCard.forEach((element)=>{
+    element.classList.remove("dark-mode-card")
+  })
+  contactCard.forEach((element)=>{
+    element.classList.remove("dark-mode-card")
+  })
 }
