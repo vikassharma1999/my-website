@@ -5,6 +5,31 @@ body {
   overflow-x: hidden;
 }
 
+.dark-mode{
+  background: black !important;
+  color: white;
+}
+
+.dark-mode .navbar-right a{
+  color: #636661;
+}
+
+.dark-mode-card{
+  background: #8b9982 !important;
+}
+
+.dark-mode-card a{
+  color: white !important;
+}
+
+.dark-mode-card h2 span{
+  color: white !important;
+}
+
+.dark-mode-card .workexp-details > li{
+  color: white;
+}
+
 .navbar-wrapper {
 background-color: rgb(235, 226, 235);
   display: flex;
@@ -366,7 +391,7 @@ text-transform: uppercase;
   margin: 0;
   padding-left: 1rem;
 }*/
-.workexp-details > li{
+.workexp-details{
   list-style: none;
   color: #868e96;
 }
