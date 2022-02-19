@@ -122,6 +122,23 @@ function closeNav() {
 //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 // }
 
+function someFun(){
+  let checkbox;
+  if(innerHeight>innerWidth){
+    checkbox=document.getElementById("mobile-switch")
+  }
+  else{
+    checkbox = document.getElementById("switch")
+  }
+  
+  if(checkbox.checked){
+     switchToDark()
+  }
+  else{
+    removeDark()
+  }
+}
+
 function switchToDark(){
   const element = document.body;
   const navBarEle = document.querySelector(".navbar-wrapper")
